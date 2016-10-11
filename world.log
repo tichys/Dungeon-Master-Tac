@@ -1,0 +1,124 @@
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\players\tac_save.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saves.dm,201
+  usr: (src)
+  src: Tac (/Player)
+  src.loc: Snow (409,266,1) (/turf/grounds/grass)
+  call stack:
+Tac (/Player): Save()
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\units\tac_save.sav' outside of current directory.
+proc name: SaveUnits (/proc/SaveUnits)
+  source file: Saves.dm,51
+  usr: Tac (/Player)
+  src: null
+  usr.loc: Snow (409,266,1) (/turf/grounds/grass)
+  call stack:
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Could not setup panel controller, specified window does not exist.
+proc name: VerifySettings (/panel_controller/proc/VerifySettings)
+  source file: Panels.dm,91
+  usr: null
+  src: /panel_controller (/panel_controller)
+  call stack:
+/panel_controller (/panel_controller): VerifySettings(Tac (/client), "default", "default.child")
+/panel_controller (/panel_controller): New(Tac (/client), "default", "default.child", "title", 1)
+Tac (/client): New()
+Tac (/client): New()
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\players\tac_save.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saves.dm,201
+  usr: (src)
+  src: Tac (/Player)
+  src.loc: the grass (609,617,1) (/turf/grass)
+  call stack:
+Tac (/Player): Save()
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\units\tac_save.sav' outside of current directory.
+proc name: SaveUnits (/proc/SaveUnits)
+  source file: Saves.dm,51
+  usr: Tac (/Player)
+  src: null
+  usr.loc: the grass (609,617,1) (/turf/grass)
+  call stack:
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Could not setup panel controller, specified window does not exist.
+proc name: VerifySettings (/panel_controller/proc/VerifySettings)
+  source file: Panels.dm,91
+  usr: null
+  src: /panel_controller (/panel_controller)
+  call stack:
+/panel_controller (/panel_controller): VerifySettings(Tac (/client), "default", "default.child")
+/panel_controller (/panel_controller): New(Tac (/client), "default", "default.child", "title", 1)
+Tac (/client): New()
+Tac (/client): New()
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\players\tac_save.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saves.dm,201
+  usr: (src)
+  src: Tac (/Player)
+  src.loc: Mountain (621,414,1) (/turf/grounds/cavefloor)
+  call stack:
+Tac (/Player): Save()
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\units\tac_save.sav' outside of current directory.
+proc name: SaveUnits (/proc/SaveUnits)
+  source file: Saves.dm,51
+  usr: Tac (/Player)
+  src: null
+  usr.loc: Mountain (621,414,1) (/turf/grounds/cavefloor)
+  call stack:
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Could not setup panel controller, specified window does not exist.
+proc name: VerifySettings (/panel_controller/proc/VerifySettings)
+  source file: Panels.dm,91
+  usr: null
+  src: /panel_controller (/panel_controller)
+  call stack:
+/panel_controller (/panel_controller): VerifySettings(Tac (/client), "default", "default.child")
+/panel_controller (/panel_controller): New(Tac (/client), "default", "default.child", "title", 1)
+Tac (/client): New()
+Tac (/client): New()
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\players\tac_save.sav' outside of current directory.
+proc name: Save (/mob/proc/Save)
+  source file: Saves.dm,201
+  usr: (src)
+  src: Tac (/Player)
+  src.loc: Snow (633,623,1) (/turf/grounds/grass)
+  call stack:
+Tac (/Player): Save()
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Safety violation: tried to access 'C:\Users\mellissa\Desktop\Dropbox\DungeonMaster-master\units\tac_save.sav' outside of current directory.
+proc name: SaveUnits (/proc/SaveUnits)
+  source file: Saves.dm,51
+  usr: Tac (/Player)
+  src: null
+  usr.loc: Snow (633,623,1) (/turf/grounds/grass)
+  call stack:
+SaveUnits()
+Tac (/Player): logout()
+Tac (/Player): Logout()
+runtime error: Could not setup panel controller, specified window does not exist.
+proc name: VerifySettings (/panel_controller/proc/VerifySettings)
+  source file: Panels.dm,91
+  usr: null
+  src: /panel_controller (/panel_controller)
+  call stack:
+/panel_controller (/panel_controller): VerifySettings(Tac (/client), "default", "default.child")
+/panel_controller (/panel_controller): New(Tac (/client), "default", "default.child", "title", 1)
+Tac (/client): New()
+Tac (/client): New()

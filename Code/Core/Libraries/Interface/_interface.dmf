@@ -1,0 +1,1885 @@
+macro "macro"
+	elem 
+		name = "`+REP"
+		command = "dfgfg"
+	elem 
+		name = "["
+		command = "fghgh"
+
+
+menu "menu"
+	elem 
+		name = "&File"
+		command = ""
+		saved-params = "is-checked"
+	elem 
+		name = "&Quit"
+		command = ".quit"
+		category = "&File"
+		saved-params = "is-checked"
+
+
+window "default"
+	elem "default"
+		type = MAIN
+		pos = 394,5
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-default = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+		statusbar = false
+		macro = "macro"
+		menu = "menu"
+	elem "child"
+		type = CHILD
+		pos = 0,0
+		size = 640x480
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = none
+		saved-params = "splitter"
+		is-vert = false
+
+window "info"
+	elem "info"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "label3"
+		type = LABEL
+		pos = 0,432
+		size = 640x48
+		anchor1 = 0,90
+		anchor2 = 100,100
+		background-color = none
+		saved-params = ""
+		text = "Press 'Esc' to return to main menu."
+	elem "label2"
+		type = LABEL
+		pos = 0,0
+		size = 636x432
+		anchor1 = 0,0
+		anchor2 = 99,90
+		font-size = 10
+		font-style = "bold"
+		background-color = none
+		saved-params = ""
+		text = ""
+		text-wrap = true
+
+window "map"
+	elem "map"
+		type = MAIN
+		pos = 281,0
+		size = 488x308
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		titlebar = false
+		statusbar = false
+	elem "label5"
+		type = LABEL
+		pos = 0,514
+		size = 488x28
+		anchor1 = 0,95
+		anchor2 = 100,100
+		background-color = none
+		saved-params = ""
+		text = "Use cardinal arrow keys or numpad to navigate. Press 'Esc' to return to main menu."
+	elem "map1"
+		type = MAP
+		pos = 0,0
+		size = 488x514
+		anchor1 = 0,0
+		anchor2 = 100,95
+		text-color = none
+		is-default = true
+		drop-zone = true
+		saved-params = "icon-size"
+
+window "title"
+	elem "title"
+		type = MAIN
+		pos = 281,0
+		size = 640x480
+		anchor1 = none
+		anchor2 = none
+		background-color = #000000
+		saved-params = "pos;size;is-minimized;is-maximized"
+		title = "title"
+		titlebar = false
+		statusbar = false
+		can-close = false
+		can-minimize = false
+		can-resize = false
+		is-pane = true
+	elem "guide"
+		type = LABEL
+		pos = 160,288
+		size = 320x32
+		anchor1 = 25,77
+		anchor2 = 75,83
+		font-size = 16
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Guide"
+	elem "label4"
+		type = LABEL
+		pos = 8,408
+		size = 624x72
+		anchor1 = 1,85
+		anchor2 = 99,100
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Press up and down arrows to navigate menu.\nPress enter or center key to choose option.\nPress 'Esc' to quit."
+	elem "info"
+		type = LABEL
+		pos = 160,312
+		size = 320x32
+		anchor1 = 25,77
+		anchor2 = 75,83
+		font-size = 16
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Developers"
+	elem "quit"
+		type = LABEL
+		pos = 160,344
+		size = 320x32
+		anchor1 = 25,68
+		anchor2 = 75,75
+		font-size = 16
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Quit"
+	elem "newgame"
+		type = LABEL
+		pos = 160,256
+		size = 320x32
+		anchor1 = 25,60
+		anchor2 = 75,67
+		font-size = 16
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "NEW GAME"
+	elem "label1"
+		type = LABEL
+		pos = 8,48
+		size = 624x112
+		anchor1 = 1,18
+		anchor2 = 99,33
+		font-size = 26
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Dungeon Master\n\nCreated By: Godsring"
+	elem "name_display"
+		type = LABEL
+		pos = 160,176
+		size = 320x56
+		anchor1 = 25,37
+		anchor2 = 75,48
+		font-size = 12
+		text-color = #ffffff
+		background-color = #000000
+		saved-params = ""
+		text = "Welcome to Dungeon Master"
+
+window "window1"
+	elem "window1"
+		type = MAIN
+		pos = 0,0
+		size = 1350x671
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		is-visible = false
+		is-disabled = true
+		saved-params = "pos;size;is-minimized;is-maximized"
+	elem "tab1"
+		type = TAB
+		pos = 672,48
+		size = 200x200
+		anchor1 = none
+		anchor2 = none
+		background-color = none
+		saved-params = ""
+	elem "info1"
+		type = INFO
+		pos = 896,48
+		size = 200x200
+		anchor1 = none
+		anchor2 = none
+		background-color = #ffffff
+		drop-zone = true
+		saved-params = ""
+		tab-background-color = none
+	elem "grid150"
+		type = GRID
+		pos = 1272,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid149"
+		type = GRID
+		pos = 1272,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid148"
+		type = GRID
+		pos = 1272,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid147"
+		type = GRID
+		pos = 1272,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid146"
+		type = GRID
+		pos = 1272,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid145"
+		type = GRID
+		pos = 1272,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid144"
+		type = GRID
+		pos = 1272,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid143"
+		type = GRID
+		pos = 1272,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid142"
+		type = GRID
+		pos = 1272,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid141"
+		type = GRID
+		pos = 1272,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid140"
+		type = GRID
+		pos = 1232,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid139"
+		type = GRID
+		pos = 1232,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid138"
+		type = GRID
+		pos = 1232,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid137"
+		type = GRID
+		pos = 1232,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid136"
+		type = GRID
+		pos = 1232,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid135"
+		type = GRID
+		pos = 1232,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid134"
+		type = GRID
+		pos = 1232,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid133"
+		type = GRID
+		pos = 1232,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid132"
+		type = GRID
+		pos = 1232,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid131"
+		type = GRID
+		pos = 1232,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid130"
+		type = GRID
+		pos = 1192,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid129"
+		type = GRID
+		pos = 1192,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid128"
+		type = GRID
+		pos = 1192,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid127"
+		type = GRID
+		pos = 1192,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid126"
+		type = GRID
+		pos = 1192,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid125"
+		type = GRID
+		pos = 1192,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid124"
+		type = GRID
+		pos = 1192,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid123"
+		type = GRID
+		pos = 1192,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid122"
+		type = GRID
+		pos = 1192,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid121"
+		type = GRID
+		pos = 1192,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid120"
+		type = GRID
+		pos = 1152,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid119"
+		type = GRID
+		pos = 1152,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid118"
+		type = GRID
+		pos = 1152,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid117"
+		type = GRID
+		pos = 1152,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid116"
+		type = GRID
+		pos = 1152,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid115"
+		type = GRID
+		pos = 1152,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid114"
+		type = GRID
+		pos = 1152,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid113"
+		type = GRID
+		pos = 1152,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid112"
+		type = GRID
+		pos = 1152,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid111"
+		type = GRID
+		pos = 1152,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid110"
+		type = GRID
+		pos = 1112,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid109"
+		type = GRID
+		pos = 1112,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid108"
+		type = GRID
+		pos = 1112,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid107"
+		type = GRID
+		pos = 1112,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid106"
+		type = GRID
+		pos = 1112,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid105"
+		type = GRID
+		pos = 1112,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid104"
+		type = GRID
+		pos = 1112,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid103"
+		type = GRID
+		pos = 1112,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid102"
+		type = GRID
+		pos = 1112,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid101"
+		type = GRID
+		pos = 1112,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid100"
+		type = GRID
+		pos = 1056,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid99"
+		type = GRID
+		pos = 1056,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid98"
+		type = GRID
+		pos = 1056,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid97"
+		type = GRID
+		pos = 1056,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid96"
+		type = GRID
+		pos = 1056,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid95"
+		type = GRID
+		pos = 1056,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid94"
+		type = GRID
+		pos = 1056,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid93"
+		type = GRID
+		pos = 1056,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid92"
+		type = GRID
+		pos = 1056,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid91"
+		type = GRID
+		pos = 1056,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid90"
+		type = GRID
+		pos = 1016,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid89"
+		type = GRID
+		pos = 1016,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid88"
+		type = GRID
+		pos = 1016,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid87"
+		type = GRID
+		pos = 1016,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid86"
+		type = GRID
+		pos = 1016,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid85"
+		type = GRID
+		pos = 1016,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid84"
+		type = GRID
+		pos = 1016,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid83"
+		type = GRID
+		pos = 1016,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid82"
+		type = GRID
+		pos = 1016,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid81"
+		type = GRID
+		pos = 1016,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid80"
+		type = GRID
+		pos = 976,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid79"
+		type = GRID
+		pos = 976,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid78"
+		type = GRID
+		pos = 976,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid77"
+		type = GRID
+		pos = 976,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid76"
+		type = GRID
+		pos = 976,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid75"
+		type = GRID
+		pos = 976,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid74"
+		type = GRID
+		pos = 976,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid73"
+		type = GRID
+		pos = 976,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid72"
+		type = GRID
+		pos = 976,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid71"
+		type = GRID
+		pos = 976,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid70"
+		type = GRID
+		pos = 936,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid69"
+		type = GRID
+		pos = 936,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid68"
+		type = GRID
+		pos = 936,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid67"
+		type = GRID
+		pos = 936,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid66"
+		type = GRID
+		pos = 936,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid65"
+		type = GRID
+		pos = 936,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid64"
+		type = GRID
+		pos = 936,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid63"
+		type = GRID
+		pos = 936,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid62"
+		type = GRID
+		pos = 936,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid61"
+		type = GRID
+		pos = 936,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid60"
+		type = GRID
+		pos = 896,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid59"
+		type = GRID
+		pos = 896,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid58"
+		type = GRID
+		pos = 896,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid57"
+		type = GRID
+		pos = 896,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid56"
+		type = GRID
+		pos = 896,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid55"
+		type = GRID
+		pos = 896,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid54"
+		type = GRID
+		pos = 896,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid53"
+		type = GRID
+		pos = 896,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid52"
+		type = GRID
+		pos = 896,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid51"
+		type = GRID
+		pos = 896,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid50"
+		type = GRID
+		pos = 832,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid49"
+		type = GRID
+		pos = 832,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid48"
+		type = GRID
+		pos = 832,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid47"
+		type = GRID
+		pos = 832,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid46"
+		type = GRID
+		pos = 832,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid45"
+		type = GRID
+		pos = 832,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid44"
+		type = GRID
+		pos = 832,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid43"
+		type = GRID
+		pos = 832,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid42"
+		type = GRID
+		pos = 832,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid41"
+		type = GRID
+		pos = 832,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid40"
+		type = GRID
+		pos = 792,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid39"
+		type = GRID
+		pos = 792,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid38"
+		type = GRID
+		pos = 792,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid37"
+		type = GRID
+		pos = 792,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid36"
+		type = GRID
+		pos = 792,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid35"
+		type = GRID
+		pos = 792,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid34"
+		type = GRID
+		pos = 792,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid33"
+		type = GRID
+		pos = 792,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid32"
+		type = GRID
+		pos = 792,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid31"
+		type = GRID
+		pos = 792,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid30"
+		type = GRID
+		pos = 752,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid29"
+		type = GRID
+		pos = 752,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid28"
+		type = GRID
+		pos = 752,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid27"
+		type = GRID
+		pos = 752,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid26"
+		type = GRID
+		pos = 752,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid25"
+		type = GRID
+		pos = 752,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid24"
+		type = GRID
+		pos = 752,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid23"
+		type = GRID
+		pos = 752,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid22"
+		type = GRID
+		pos = 752,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid21"
+		type = GRID
+		pos = 752,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid20"
+		type = GRID
+		pos = 712,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid19"
+		type = GRID
+		pos = 712,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid18"
+		type = GRID
+		pos = 712,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid17"
+		type = GRID
+		pos = 712,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid16"
+		type = GRID
+		pos = 712,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid15"
+		type = GRID
+		pos = 712,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid14"
+		type = GRID
+		pos = 712,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid13"
+		type = GRID
+		pos = 712,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid8"
+		type = GRID
+		pos = 712,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid7"
+		type = GRID
+		pos = 712,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid4"
+		type = GRID
+		pos = 672,576
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid3"
+		type = GRID
+		pos = 672,616
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid12"
+		type = GRID
+		pos = 672,496
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid11"
+		type = GRID
+		pos = 672,536
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid10"
+		type = GRID
+		pos = 672,256
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid9"
+		type = GRID
+		pos = 672,296
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid6"
+		type = GRID
+		pos = 672,416
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid5"
+		type = GRID
+		pos = 672,456
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid2"
+		type = GRID
+		pos = 672,336
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+	elem "grid1"
+		type = GRID
+		pos = 672,376
+		size = 32x32
+		anchor1 = none
+		anchor2 = none
+		text-color = #ffffff
+		background-color = #000000
+		drop-zone = true
+		saved-params = ""
+		highlight-color = #000000
+
