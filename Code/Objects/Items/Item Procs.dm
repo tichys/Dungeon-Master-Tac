@@ -92,9 +92,6 @@
 	ITEM.loc=loc
 	ITEM.suffix=null
 	weight-=ITEM.weight
-	if(istype(ITEM,/obj/Items/)) //Simply because I don't want to define stuff as atom vars and procs.
-		var/obj/Items/TRUE = ITEM
-		TRUE.ReEquipWhen=0
 	ITEM.DeleteItem()
 	if(ITEM.NoDropOnDeath)
 		del(ITEM)

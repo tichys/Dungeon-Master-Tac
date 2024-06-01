@@ -112,9 +112,8 @@ client
 			src.Building_Interface += O
 
 		if(state == "Sub-menu")
-			var
-				L
-				L_Num
+			var/L
+			var/L_Num
 			if(Menu_loc == "Wall")
 				L = "6:17"
 				L_Num = 209

@@ -683,7 +683,7 @@ obj/HUD
 							S.CaveWater = 0
 						S.icon = src.Image.icon-rgb(0,0,128)
 						S.icon_state = src.Image.icon_state
-						S.text = "<font color=#909090>×"
+						S.text = "<font color=#909090>ï¿½"
 						return 1
 					IsBlocked()
 						if(src.loc.isbridge == 0)
@@ -707,7 +707,7 @@ obj/HUD
 							S.icon_state = "Bridge"
 							if(src.loc.Content3 == "Lava")
 								S.icon_state = "LavaBridge"
-							S.text = "<font color=#909090>×"
+							S.text = "<font color=#909090>ï¿½"
 							return 1
 						IsBlocked()
 							if(src.loc.isbridge == 0)
@@ -1120,9 +1120,8 @@ Player
 			src.Building_Interface += O
 
 		if(state == "Sub-menu")
-			var
-				L
-				L_Num
+			var/L
+			var/L_Num
 			if(Menu_loc == "Wall")
 				L = "6:17"
 				L_Num = 209

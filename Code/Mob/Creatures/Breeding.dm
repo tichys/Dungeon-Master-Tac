@@ -9,65 +9,65 @@ mob/Monsters/Egg //Probably should make this a sub-type of critter..
 	DieAge=999
 mob/proc/BreedWith(mob/TARGET,ALLOWED) spawn() //Don't want to lock up our callers on sleeps, so we spawn, that means no return values.
 	//Notably, setting "ALLOWED" is used to just skip asking for permission if your owners aren't the same.
-	var/mob/MALE
-	var/mob/FEMALE
-	if(Gender=="Male" && TARGET.Gender=="Female")
-		MALE=src
-		FEMALE=TARGET
-	if(TARGET.Gender=="Male" && Gender=="Female")
-		MALE=TARGET
-		FEMALE=src
-	switch(MALE.Race) if("Vampire","Dragon","Svartalfar") return
-	switch(FEMALE.Race) if("Vampire","Dragon","Svartalfar") return
-	if(MALE.Critter) if(!FEMALE.Critter) return
-	if(FEMALE.Critter) if(!MALE.Critter) return
-	if(MALE&&FEMALE)
-		if(FEMALE.CHILDMALE||FEMALE.CHILDFEMALE) return
-		if(MALE.Owner==FEMALE.Owner) ALLOWED=1
+	var/mob/male
+	var/mob/female
+	if(Gender=="male" && TARGET.Gender=="female")
+		male=src
+		female=TARGET
+	if(TARGET.Gender=="male" && Gender=="female")
+		male=TARGET
+		female=src
+	switch(male.Race) if("Vampire","Dragon","Svartalfar") return
+	switch(female.Race) if("Vampire","Dragon","Svartalfar") return
+	if(male.Critter) if(!female.Critter) return
+	if(female.Critter) if(!male.Critter) return
+	if(male&&female)
+		if(female.CHILDMALE||female.CHILDFEMALE) return
+		if(male.Owner==female.Owner) ALLOWED=1
 		else if(!ALLOWED)
 			if(ismob(TARGET.Owner)) if(alert(TARGET.Owner, "[Owner] is asking to breed [src] with [TARGET]", "Choose", "Yes", "No", null)=="Yes") ALLOWED=1
 			else return //No more breeding with NPCs randomly in combat, reason there's an else case is just so I can remember to add in something later here.
-		if(ALLOWED) if(MALE in view(1,FEMALE))
-			if(!MALE.Critter) //No need to evaluate the female's critter part, cuz they'll always be the same if you reach this point.
-				if(MALE.Age<5||MALE.Age>100) //This ended up being more code than I expected just to tell both sides that a side isn't of age to breed.
-					MALE.Owner<<"[MALE] isn't of age to breed!"
-					if(MALE.Owner!=FEMALE.Owner) FEMALE.Owner<<"[MALE] isn't of age to breed!"
+		if(ALLOWED) if(male in view(1,female))
+			if(!male.Critter) //No need to evaluate the female's critter part, cuz they'll always be the same if you reach this point.
+				if(male.Age<5||male.Age>100) //This ended up being more code than I expected just to tell both sides that a side isn't of age to breed.
+					male.Owner<<"[male] isn't of age to breed!"
+					if(male.Owner!=female.Owner) female.Owner<<"[male] isn't of age to breed!"
 					return
-				if(FEMALE.Age<5||FEMALE.Age>100)
-					MALE.Owner<<"[FEMALE] isn't of age to breed!"
-					if(MALE.Owner!=FEMALE.Owner) FEMALE.Owner<<"[FEMALE] isn't of age to breed!"
+				if(female.Age<5||female.Age>100)
+					male.Owner<<"[female] isn't of age to breed!"
+					if(male.Owner!=female.Owner) female.Owner<<"[female] isn't of age to breed!"
 					return
-			switch(FEMALE.Race)
+			switch(female.Race)
 				if("Spider")
-					if(FEMALE.CanBreed == 0 && FEMALE.SubRace=="Queen") if(Age>=29) //Should really use a diffrent var.. maybe just go on icon? Deal with it when I finish breeding off.
-						FEMALE.Owner << "<b><font color=purple>[FEMALE]'s egg sack begins to swell she may now create a lair!"
-						FEMALE.MaxWebContent += 100
-						FEMALE.WebContent = FEMALE.MaxWebContent
-						FEMALE.CanBreed = 1
+					if(female.CanBreed == 0 && female.SubRace=="Queen") if(Age>=29) //Should really use a diffrent var.. maybe just go on icon? Deal with it when I finish breeding off.
+						female.Owner << "<b><font color=purple>[female]'s egg sack begins to swell she may now create a lair!"
+						female.MaxWebContent += 100
+						female.WebContent = female.MaxWebContent
+						female.CanBreed = 1
 					return
 				if("Lizardman")
-					if(FEMALE.CoolDown("LizardEgg",4200)) //The perent shares a cooldown with the hatch time of the egg. She isn't really connected to it. (Though it's connected to her slightly)
-						var/mob/Monsters/Egg/E = new(FEMALE.loc) //Makes a Egg at their location.
+					if(female.CoolDown("LizardEgg",4200)) //The perent shares a cooldown with the hatch time of the egg. She isn't really connected to it. (Though it's connected to her slightly)
+						var/mob/Monsters/Egg/E = new(female.loc) //Makes a Egg at their location.
 						E.icon_state="Lizardman"
-						E.ChangeOwnership(FEMALE.Owner) //For now the Female always gets ownership.
-						E.Breeding(MALE,FEMALE,4200) //The new Egg is the src.
-						FEMALE.RebuildOverlays() //Due to recent var changes, the P will show up after refreshing.
-						spawn(4201) FEMALE.RebuildOverlays() //After 4200 vars will have reverted.
+						E.ChangeOwnership(female.Owner) //For now the female always gets ownership.
+						E.Breeding(male,female,4200) //The new Egg is the src.
+						female.RebuildOverlays() //Due to recent var changes, the P will show up after refreshing.
+						spawn(4201) female.RebuildOverlays() //After 4200 vars will have reverted.
 					else
-						FEMALE.Owner << "[FEMALE.Owner] is still recovering from the last egg she layed."
-				else FEMALE.Breeding(MALE,FEMALE) //FEMALE is both src, and an argument in traditional cases.
-mob/proc/Breeding(mob/MALE,mob/FEMALE,TIME=3000) //src is the one having the kid, the arguments are just for setting statistics.
+						female.Owner << "[female.Owner] is still recovering from the last egg she layed."
+				else female.Breeding(male,female) //female is both src, and an argument in traditional cases.
+mob/proc/Breeding(mob/male,mob/female,TIME=3000) //src is the one having the kid, the arguments are just for setting statistics.
 	var/WasSet //Quick little var to fix up some buggyness.
-	if(!FEMALE)
+	if(!female)
 		WasSet=1
-		FEMALE=src //To stop any crashes of the proc that can cause src to bug up we set female to src if there isn't one.
+		female=src //To stop any crashes of the proc that can cause src to bug up we set female to src if there isn't one.
 	if(CHILDMALE||CHILDFEMALE) return //This is the only "rule" in this proc, meaning you can get anything, even males preg if you really wanted by calling this proc directly.
-	CHILDMALE=MALE //Durring birth this will be set to CHILDFEMALE if null.
-	CHILDFEMALE=FEMALE //Durring birth this will be set to CHILDMALE if null.
+	CHILDMALE=male //Durring birth this will be set to CHILDFEMALE if null.
+	CHILDFEMALE=female //Durring birth this will be set to CHILDMALE if null.
 	CHILDCOUNT=1 //Number to create upon giving birth()
-	CHILDTYPE=text2path("/mob/Monsters/[FEMALE.Race]")
-	if(FEMALE.Critter) CHILDTYPE=text2path("/mob/Monsters/Critters/[FEMALE.Race]")
-	if(FEMALE) switch(FEMALE.Race) //Race of FEMALE, not src.
+	CHILDTYPE=text2path("/mob/Monsters/[female.Race]")
+	if(female.Critter) CHILDTYPE=text2path("/mob/Monsters/Critters/[female.Race]")
+	if(female) switch(female.Race) //Race of female, not src.
 		if("Kobold")
 			CHILDCOUNT=2
 			TIME*=0.6
@@ -79,16 +79,16 @@ mob/proc/Breeding(mob/MALE,mob/FEMALE,TIME=3000) //src is the one having the kid
 		if("Orc") TIME*=0.9
 		if("Human") TIME*=0.8
 	if(Egg)
-		if(FEMALE)
-			switch(FEMALE.Race)
+		if(female)
+			switch(female.Race)
 				if("Zombie","Devourer")
-					view(FEMALE) << "[FEMALE] expells a putrid bag of rotting flesh and bones which promptly attaches itself to the nearest surface"
+					view(female) << "[female] expells a putrid bag of rotting flesh and bones which promptly attaches itself to the nearest surface"
 				else
-					view(FEMALE) << "[FEMALE] lays an egg."
+					view(female) << "[female] lays an egg."
 	else
 		view(src) << "[src] is due to have a baby!"
-		FEMALE.RebuildOverlays()
-	if(WasSet) FEMALE=null //As a result we follow the old method of override.
+		female.RebuildOverlays()
+	if(WasSet) female=null //As a result we follow the old method of override.
 //		RebuildOverlays() //Adding the Preg overlay.
 	spawn(TIME) GiveBirth() //While spawning you have a chance to change child details as they're attatched to src rather than this proc.
 mob/proc/GiveBirth() //Uses CHILDMALE and CHILDFEMALE rather than args, src is only used for deletion in the case of being an egg.
