@@ -1,4 +1,4 @@
-turf/grounds
+/turf/grounds
 	Enter(atom/m)
 		if(usr)
 			if(usr.key) return(1)
@@ -29,7 +29,7 @@ turf/grounds
 		Sky = 1
 		Content3 = "CanClimb"
 		OIcon = "Desert"
-		text = "<font color=#FFFF66>×"
+		text = "<font color=#FFFF66>ï¿½"
 	snow
 		name = "snow"
 		icon = 'Cave.dmi'
@@ -37,7 +37,7 @@ turf/grounds
 		Content3 = "CanClimb"
 		OIcon = "Snow"
 		Sky = 1
-		text = "<font color=#F8F8F8>×"
+		text = "<font color=#F8F8F8>ï¿½"
 	marsh
 		name = "marsh"
 		icon = 'bamboo.dmi'
@@ -46,7 +46,7 @@ turf/grounds
 		Content = "Marsh"
 		Content3 = "CanClimb"
 		OIcon = "Marsh"
-		text = "<font color=#00CC66>×"
+		text = "<font color=#00CC66>ï¿½"
 		New() switch(rand(1,16))
 			if(1) icon_state = "Tropical1"
 			if(2) icon_state = "Tropical2"
@@ -66,7 +66,7 @@ turf/grounds
 		Sky = 1
 		Content3 = "CanClimb"
 		OIcon = "Grass"
-		text = "<font color=#33CC33>×"
+		text = "<font color=#33CC33>ï¿½"
 	deadgrass
 		name = "dead grass"
 		icon = 'Cave.dmi'
@@ -74,7 +74,7 @@ turf/grounds
 		Sky = 1
 		Content3 = "CanClimb"
 		OIcon = "DeadGrass"
-		text = "<font color=#003333>×"
+		text = "<font color=#003333>ï¿½"
 	goodgrass
 		name = "flowery grass"
 		icon = 'Cave.dmi'
@@ -82,7 +82,7 @@ turf/grounds
 		Sky = 1
 		Content3 = "CanClimb"
 		OIcon = "GoodGrass"
-		text = "<font color=#66FF00>×"
+		text = "<font color=#66FF00>ï¿½"
 	cavefloor2
 		name = "cavefloor"
 		icon = 'Cave.dmi'
@@ -90,7 +90,7 @@ turf/grounds
 		OIcon = "CaveFloor"
 		CanDigAt = 0
 		Sky = 1
-		text = "<font color=#999933>×"
+		text = "<font color=#999933>ï¿½"
 	WoodWall
 		name = "Wooden Wall"
 		icon = 'Cave.dmi'
@@ -189,35 +189,35 @@ turf/grounds
 		icon_state = "DevourerFloor"
 		name = "DevourerFloor"
 		CanDigAt = 0
-		text = "<font color=red>×"
+		text = "<font color=red>ï¿½"
 
 	DetailedFloor
 		name = "stone floor"
 		icon = 'Cave.dmi'
 		icon_state = "DetailedFloor"
 		CanDigAt = 0
-		text = "<font color=#808080>×"
+		text = "<font color=#808080>ï¿½"
 
 	TribalFloor
 		name = "Tribal floor"
 		icon = 'Cave.dmi'
 		icon_state = "Tribal"
 		CanDigAt = 0
-		text = "<font color=#808080>×"
+		text = "<font color=#808080>ï¿½"
 
 	BoneFloor
 		name = "Bone floor"
 		icon = 'Cave.dmi'
 		icon_state = "BoneFloor"
 		CanDigAt = 0
-		text = "<font color=#808080>×"
+		text = "<font color=#808080>ï¿½"
 
 	GoblinFloor
 		name = "Goblin floor"
 		icon = 'Cave.dmi'
 		icon_state = "GoblinFloor"
 		CanDigAt = 0
-		text = "<font color=#808080>×"
+		text = "<font color=#808080>ï¿½"
 
 	Stairs
 		Detailed=1
@@ -254,7 +254,7 @@ turf/grounds
 		icon_state = "HellFloor"
 		Cant = 1
 		OIcon = "HellFloor"
-		text = "<font color=#990033>×"
+		text = "<font color=#990033>ï¿½"
 	hellcliff
 		name = "HellCliff"
 		icon = 'Cave.dmi'
@@ -314,7 +314,7 @@ turf/grounds
 		icon = 'Cave.dmi'
 		icon_state = "Chasm"
 		Content = "Chasm"
-		text = "<font color=#181818>×"
+		text = "<font color=#181818>ï¿½"
 	Sky
 		name = "Sky"
 		icon = 'Cave.dmi'
@@ -322,14 +322,14 @@ turf/grounds
 		Content3 = "Peak"
 		Content = "Sky"
 		OIcon = "Sky"
-		text = "<font color=#33FFFF>×"
+		text = "<font color=#33FFFF>ï¿½"
 	MountainPeak
 		icon = 'Cave.dmi'
 		icon_state = "Peak"
 		name = "peak"
 		Content3 = "Peak"
 		OIcon = "Peak"
-		text = "<font color=#CC9900>×"
+		text = "<font color=#CC9900>ï¿½"
 	lavas
 		Content3 = "Lava"
 		lava

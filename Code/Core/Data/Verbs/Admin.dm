@@ -467,7 +467,7 @@ Admin/verb/SummonPlayer()
 	set category = "Admin"
 	var/T = input("Summon who's units?")as null|text
 	if(!T)
-		..()
+		. = ..()
 	else
 		for(var/mob/S in world)
 			if(T == S.key)
